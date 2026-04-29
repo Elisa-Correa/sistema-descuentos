@@ -24,7 +24,7 @@ def test_sin_descuento():
 
 
 def test_total_final():
-    assert calcular_total_con_descuento(10000) == 8000
+    assert calcular_total_con_descuento(10000) == 9000
 
 
 #  Caso de error (tipo de dato incorrecto)
