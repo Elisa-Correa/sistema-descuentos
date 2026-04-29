@@ -19,14 +19,8 @@ jobs:
 
       - name: Instalar dependencias
         run: |
-          pip install pytest pytest-html
+          pip install pytest
 
       - name: Ejecutar tests
         run: |
-          pytest --html=report.html
-
-      - name: Subir reporte como artefacto
-        uses: actions/upload-artifact@v4
-        with:
-          name: reporte-tests
-          path: report.html
+          pytest -v
